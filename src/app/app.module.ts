@@ -12,6 +12,7 @@ import { GeneralesComponent } from './components/generales/generales.component';
 import { HomeComponent } from './components/home/home.component';
 import { ArticulosComponent } from './components/articulos/articulos.component';
 import { ArticulosViceComponent } from './components/articulos-vice/articulos-vice.component';
+import { RecuperarComponent } from './components/recuperar/recuperar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ArticulosViceComponent } from './components/articulos-vice/articulos-vi
     GeneralesComponent,
     HomeComponent,
     ArticulosComponent,
-    ArticulosViceComponent
+    ArticulosViceComponent,
+    RecuperarComponent,
   ],
   imports: [
     BrowserModule,

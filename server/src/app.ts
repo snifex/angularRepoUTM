@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import pool from './database';
 
-const correoAcceso = require("./correoAcceso");
+const correoAcceso = require("./correoAcceso")
 
 class Server {
     public app: Application;

@@ -3,12 +3,9 @@ import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 dotenv.config();
 module.exports = (formulario: any) => {
-    const token: string = jwt.sign(
-        formulario.correo,
-        process.env.TOKEN_SECRET || 'prueba'
-    );
+    const token: string = jwt.sign(formulario.correo, process.env.TOKEN_SECRET || 'prueba');
     var server = email.server.connect({
-        user: 'nunezbellogg@gmail.com',
+        user: 'snifexkeylogger@gmail.com',
         password: 'estupido014',
         host: 'smtp.gmail.com',
         ssl: true,
@@ -31,6 +28,7 @@ module.exports = (formulario: any) => {
         ],
     };
     server.send(message, function (err: any, message: any) {
+        console.log(token);
         console.log(1);
     });
 };

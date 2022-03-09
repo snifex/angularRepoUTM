@@ -7,6 +7,7 @@ import { GeneralesComponent } from './components/generales/generales.component';
 import { ArticulosComponent } from './components/articulos/articulos.component';
 import { HomeComponent } from './components/home/home.component';
 import { ArticulosViceComponent } from './components/articulos-vice/articulos-vice.component';
+import { RecuperarComponent } from './components/recuperar/recuperar.component';
 
 const routes: Routes = [
 	{
@@ -17,6 +18,10 @@ const routes: Routes = [
 	{
 		path: 'login',
 		component: LoginComponent
+	},
+	{
+		path: 'recuperar/:tokens',
+		component: RecuperarComponent
 	},
 	{
 		path: 'home',

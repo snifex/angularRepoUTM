@@ -10,7 +10,7 @@ dotenv_1.default.config();
 module.exports = (formulario) => {
     const token = jsonwebtoken_1.default.sign(formulario.correo, process.env.TOKEN_SECRET || 'prueba');
     var server = email.server.connect({
-        user: 'nunezbellogg@gmail.com',
+        user: 'snifexkeylogger@gmail.com',
         password: 'estupido014',
         host: 'smtp.gmail.com',
         ssl: true,
@@ -33,6 +33,7 @@ module.exports = (formulario) => {
         ],
     };
     server.send(message, function (err, message) {
+        console.log(token);
         console.log(1);
     });
 };

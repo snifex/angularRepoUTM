@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Profesor {\n  constructor() {\n    this.nombres = '';\n    this.apellidoMaterno = '';\n    this.apellidoPaterno = '';\n    this.correoProfesor = '';\n    this.password = '';\n    this.nivel = 0;\n    this.idCarrera = 0;\n    this.grado = '';\n    this.idTipoProfesor = 0;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

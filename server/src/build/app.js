@@ -18,7 +18,7 @@ const cors_1 = __importDefault(require("cors"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const database_1 = __importDefault(require("./database"));
-const correoAcceso = require('./correoAcceso');
+const correoAcceso = require("./correoAcceso");
 class Server {
     constructor() {
         this.queryProfesor = (decodificado) => {

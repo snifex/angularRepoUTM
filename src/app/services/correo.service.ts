@@ -9,15 +9,13 @@ export class CorreoService {
   constructor(private http: HttpClient) {}
   enviarCorreoRecuperarContrasena(body: any) {
     return this.http.post(
-      `${environment.API_URL_CORREOS}/enviarCorreoRecuperarContrasenya/`,
-      body
+      `${environment.API_URL_CORREOS}/enviarCorreoRecuperarContrasenya/`,body
     );
   }
   decodificarMail(token: any) {
     let dato = { token: token };
     return this.http.post(
-      `${environment.API_URL_CORREOS}/decodificarMail`,
-      dato
+      `${environment.API_URL_CORREOS}/decodificarMail`,dato
     );
   }
 }
